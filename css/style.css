@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h2{
+  color: blue;
+  font-size: 50px;
+  text-align: center;
+  margin: 40px 0
+}
+
+.fuwatAnime {
+  -webkit-animation-fill-mode:both;
+  -ms-animation-fill-mode:both;
+  animation-fill-mode:both;
+  -webkit-animation-duration:1.5s;
+  -ms-animation-duration:1.5s;
+  animation-duration:1.5s;
+  -webkit-animation-name: fuwatAnime;
+  -ms-animation-name: fuwatAnime;
+  animation-name: fuwatAnime;
+  visibility: visible !important;
+ }
+ @-webkit-keyframes fuwatAnime {
+  0% { opacity: 0; -webkit-transform: translateY(-20px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); }
+ }
+ @keyframes fuwatAnime {
+  0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+  100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+ }
+
+section{
+  overflow: hidden;
+}
+
+.bg-swicher {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/background1.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  padding: 30px 15px 0;
+  color: #fff;
+  transition: 0.5s;
+  font-family: "Futura";
+  font-weight: normal;
+  font-size: 20pt;
+}
+
+ul {
+  overflow: hidden;
+  margin: 0 50px;
+}
+
+ul li {
+  list-style: none;
+  float: right;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.logo img {
+  width: 900px;
+  margin: auto;
+}
+
+.logo p {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+  font-family: "Futura";
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.logo{
+  position: absolute;
+  top: 325%;
+  right: 50%;
+}
+
+.intro {
+  color: blue;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 40px
+}
+
+.fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+
+.intro1 img {
+  width: 480px;
+  height: auto;
+  margin-left: 250px;
+  margin-top: 40px;
+}
+
+.intro1-text {
+  width: 500px;
+  float: right;
+  padding-right: 250px;
+  margin-top: 60px;
+}
+
+.intro1 a {
+  display: block;
+  border-bottom: 1px solid;
+  margin-top: 32px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  background-color: blue;
+  color: white;
+  width: 180px;
+  line-height: 43px;
+  border-radius: 16px;
+  text-align: center;
+  margin: auto;
+  margin-top: 35px;
+}
+
+.intro2 img {
+  width: 480px;
+  height: auto;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+.intro2-text {
+  width: 500px;
+  float: left;
+  padding-left: 250px;
+  margin-top: 60px;
+}
+
+.intro2 a {
+  display: block;
+  border-bottom: 1px solid;
+  margin-top: 32px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  background-color: #f3e532;
+  color: white;
+  width: 180px;
+  line-height: 43px;
+  border-radius: 16px;
+  text-align: center;
+  margin: auto;
+  margin-top: 35px;
+}
+
+.courses-item a{
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  width: 160px;
+  line-height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.courses-item h3 {
+  font-size: 15px;
+  margin-top: 16px;
+}
+
+.courses-item img {
+  width: 60px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.courses-item {
+  flex-basis: 200px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.courses-items {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider {
+  margin: 30px auto;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  width: 80%;
+}
+
+footer {
+  color: blue;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#access {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}

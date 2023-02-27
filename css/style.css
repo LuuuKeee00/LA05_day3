@@ -124,10 +124,12 @@ li {
 }
 
 .intro1-text {
+  font-size: 18px;
   width: 500px;
   float: right;
   padding-right: 250px;
   margin-top: 60px;
+  line-height: 30px;
 }
 
 .intro1 a {
@@ -155,10 +157,12 @@ li {
 }
 
 .intro2-text {
+  font-size: 18px;
   width: 500px;
   float: left;
   padding-left: 250px;
   margin-top: 60px;
+  line-height: 30px;
 }
 
 .intro2 a {
@@ -178,12 +182,27 @@ li {
   margin-top: 35px;
 }
 
+#courses {
+  background-color: rgba(186, 213, 245, 0.6);
+  z-index: 1;
+}
+
+.courses-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
 .courses-item a{
-  display: inline-block;
+  display: block;
   color: #fff;
   font-size: 12px;
   font-weight: bold;
   width: 160px;
+  height: 40px;
+  margin: 15px quto;
   line-height: 40px;
   border-radius: 10px;
   text-align: center;
@@ -195,9 +214,12 @@ li {
 }
 
 .courses-item img {
-  width: 60px;
+  width: 70px;
   height: auto;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .courses-item {
@@ -209,24 +231,44 @@ li {
   margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
-  width: 800px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
 
 .slider {
-  margin: 30px auto;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-bottom: 30px;
-  margin-left: auto;
-  width: 80%;
+  width: 100%;
+  max-width: 80%;
+  margin: auto;
 }
+
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ .slick-prev:before,
+.slick-next:before {
+  color: black !important;
+} 
+
+.slick-dots {
+  left: 50%!important;
+  transform: translateX(-50%)!important;
+  display:inline-block!important;
+}
+
+
 
 footer {
   color: blue;
   text-align: center;
   margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 #access {

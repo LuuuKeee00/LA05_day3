@@ -8,11 +8,11 @@ $(function ($) {
 $('.slider').slick({
   dots: true,
   infinite: true,
-  slidesToShow: 2, 
-  slidesToScroll: 1
+  slidesToShow: 4, 
+  slidesToScroll: 1, 
+  auto: true
 });
 
-  $(document).ready(function(){
     $('.fuwat').css('visibility','hidden');
     $(window).scroll(function(){
      var windowHeight = $(window).height(),
@@ -22,9 +22,6 @@ $('.slider').slick({
       if(topWindow > objectPosition - windowHeight + 200){
        $(this).addClass("fuwatAnime");
       }
-     });
     });
   });
-
 });
-
